@@ -2,7 +2,7 @@ import { Input } from "@nextui-org/input";
 import { useState } from "react";
 import { ScaleComparison } from "@/components/ScaleComparison";
 
-export default function Home() {
+export default function Index() {
   const [kwh, setKwh] = useState<number | undefined>(150);
   const isScaleVisible = !(kwh === undefined || Number.isNaN(kwh));
 
@@ -13,6 +13,7 @@ export default function Home() {
         <Input
           label={"Energy rating (kWh)"}
           type={"number"}
+          inputMode={"numeric"}
           value={kwh?.toString()}
           onChange={(e) => {
             setKwh(parseInt(e.target.value));

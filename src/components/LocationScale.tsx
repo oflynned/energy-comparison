@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import { Rating } from "@/energy-scale/rating";
 import { EnergyScale } from "@/energy-scale/energy-scale";
 
 type Props = {

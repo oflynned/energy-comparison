@@ -1,10 +1,8 @@
-import { FunctionComponent } from "react";
+import { ComponentProps, FunctionComponent } from "react";
 import { BrusselsScale, FlandersScale, WalloniaScale } from "@/energy-scale";
 import { LocationScale } from "@/components/LocationScale";
 
-type Props = {
-  kwh: number;
-};
+type Props = Pick<ComponentProps<typeof LocationScale>, "kwh">;
 
 export const ScaleComparison: FunctionComponent<Props> = ({ kwh }) => {
   const brussels = new BrusselsScale();
