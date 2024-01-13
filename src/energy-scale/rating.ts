@@ -7,5 +7,6 @@ export class Rating {
   constructor(
     readonly range: Range,
     readonly label: string,
+    readonly colour: string,
   ) {}
 }

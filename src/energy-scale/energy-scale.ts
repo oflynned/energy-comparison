@@ -8,13 +8,14 @@ export abstract class EnergyScale {
       ({ range }) => kwh > range.lower && kwh <= range.upper,
     );
 
-    return rating ?? this.getFallback();
-  }
+    if (rating) {
+      return rating;
+    }
 
-  private getFallback() {
     return new Rating(
       { lower: Number.NEGATIVE_INFINITY, upper: Number.POSITIVE_INFINITY },
-      "Unknown",
+      "-",
+      "bg-gray-500",
     );
   }
 }

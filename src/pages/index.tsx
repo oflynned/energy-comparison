@@ -1,6 +1,6 @@
 import { Input } from "@nextui-org/input";
 import { useState } from "react";
-import { ScaleComparison } from "@/components/ScaleComparison";
+import { ScaleComparison } from "@/components";
 
 export default function Index() {
   const [kwh, setKwh] = useState<number | undefined>(150);

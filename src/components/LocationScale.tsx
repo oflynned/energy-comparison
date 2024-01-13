@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { EnergyScale } from "@/energy-scale/energy-scale";
+import { RatingBlock } from "@/components/RatingBlock";
 
 type Props = {
   kwh: number;
@@ -17,7 +18,7 @@ export const LocationScale: FunctionComponent<Props> = ({
   return (
     <div className={"flex flex-col"}>
       <h2>{location}</h2>
-      <h3>{rating.label}</h3>
+      <RatingBlock rating={rating} />
     </div>
   );
 };
