@@ -17,7 +17,7 @@ export const EnergyComparison: FunctionComponent<Props> = ({ kwh }) => {
   return (
     <div className={"flex flex-col gap-4"}>
       <h1>{`A ${kwh} kWh rating is equivalent to:`}</h1>
-      <div className={"flex sm:flex-row flex-col justify-between"}>
+      <div className={"flex sm:flex-row flex-col gap-2 justify-between"}>
         <div className={"flex flex-col"}>
           <h2>Brussels</h2>
           <h2>{brusselsRating.label}</h2>
