@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="w-screen h-screen">
-      <div className={"w-[768px] m-auto flex flex-col gap-4 py-4"}>
+      <div className={"max-w-[768px] m-auto flex flex-col gap-4 p-4"}>
         <h1 className={"font-bold text-4xl"}>Energy Scale</h1>
         <Input
           label={"Energy rating (kWh)"}
