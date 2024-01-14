@@ -1,2 +1,2 @@
 export * from "./ScaleComparison";
-export * from "./LocationScale";
+export * from "./LocationEnergyRating";

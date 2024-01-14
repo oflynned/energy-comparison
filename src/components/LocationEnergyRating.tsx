@@ -8,7 +8,7 @@ type Props = {
   location: string;
 };
 
-export const LocationScale: FunctionComponent<Props> = ({
+export const LocationEnergyRating: FunctionComponent<Props> = ({
   kwh,
   scale,
   location,
@@ -16,7 +16,7 @@ export const LocationScale: FunctionComponent<Props> = ({
   const rating = scale.getRating(kwh);
 
   return (
-    <div className={"flex flex-col"}>
+    <div className={"flex flex-col gap-1"}>
       <h2>{location}</h2>
       <RatingBlock rating={rating} />
     </div>

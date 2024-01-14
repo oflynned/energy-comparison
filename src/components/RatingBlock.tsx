@@ -10,7 +10,7 @@ export const RatingBlock: FunctionComponent<Props> = ({ rating }) => {
 
   return (
     <div
-      className={`w-8 h-8 flex items-center justify-center`}
+      className={`w-8 h-8 flex items-center justify-center rounded`}
       style={{ backgroundColor: colour }}
     >
       <h3 className={"font-bold text-white"}>{label}</h3>
